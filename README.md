@@ -45,3 +45,5 @@ for (WritableRaster sprite : sprites) {
 }
 ```
 This will return the index of the sprite when it was used to build the matcher. It's also possible to get how close was the match. A value of zero should mean an exact match. A small value could mean an exact match with noise, but any value greater than zero could mean a match to a variably similar image, so the usage of this value will depend on context. Note that it's not needed to use an input image equal to the sprite being read: it's possible to use a larger image and indicate where in the image to read the sprite from.
+
+Requires my TallyCounter project.
